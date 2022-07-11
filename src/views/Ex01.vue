@@ -8,9 +8,9 @@
       <span v-for="hobby of hobbies" :key="hobby">{{ hobby }} </span>
     </p>
     <br />
-    <a v-bind:href="rakus">株式会社ラクス</a>
+    <a :href="rakus">株式会社ラクス</a>
     <br />
-    <img v-bind:src="men" alt="" />
+    <img :src="men" alt="" />
   </div>
 </template>
 

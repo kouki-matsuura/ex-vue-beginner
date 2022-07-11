@@ -8,9 +8,9 @@
       <span v-for="hobby of hobbies" :key="hobby">{{ hobby }} </span>
     </p>
     <br />
-    <a v-bind:href="rakus">株式会社ラクス</a>
+    <a :href="rakus">株式会社ラクス</a>
     <br />
-    <img v-bind:src="image" alt="" />
+    <img :src="image" alt="" />
     <br />
     <button @click="addElement()" :disabled="canNotClick">ボタン</button>
   </div>
@@ -28,7 +28,7 @@ export default class Ex02Component extends Vue {
   private image = "";
   private canNotClick = false;
 
-  addElement() {
+  addElement(): void {
     this.name = "山田太郎";
     this.age = 31;
     this.add10 = this.age + 10;

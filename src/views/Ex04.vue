@@ -17,11 +17,11 @@ export default class Ex04Component extends Vue {
   private num2 = 0;
   private num3 = 0;
 
-  get price() {
+  get price(): number {
     return this.num1 + this.num2 + this.num3;
   }
 
-  get priceWithTax() {
+  get priceWithTax(): number {
     return Math.floor(this.price * 1.1);
   }
 }
