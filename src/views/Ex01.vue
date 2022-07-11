@@ -27,4 +27,8 @@ export default class Ex01Component extends Vue {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.left {
+  text-align: left;
+}
+</style>
